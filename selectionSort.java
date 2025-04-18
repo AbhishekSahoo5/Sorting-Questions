@@ -33,3 +33,5 @@ public class selectionSort{
 
     }
 }
+
+//  GFG Practise Link:- "https://www.geeksforgeeks.org/problems/selection-sort/1"
