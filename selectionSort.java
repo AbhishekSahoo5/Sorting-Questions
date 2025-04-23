@@ -3,18 +3,14 @@ public class selectionSort{
     public static int[] selection_sort(int arr[])
     {
         int n=arr.length;
-        for(int i=0;i<n-1;i++)
+        for(int i=0;i<n;i++)
         {
             int min=i;
             for(int j=i+1;j<n;j++)
             {
-                if(arr[j]<arr[min])
-                {
-                    min=j;
+                if(arr[min]>arr[j]){
+                    swap(arr,i,j);
                 }
-            }
-            if(min!=i){
-                swap(arr,i,min);
             }
         }
         return arr;
